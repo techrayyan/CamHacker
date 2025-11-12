@@ -34,7 +34,7 @@ For termux, use additional command `termux-setup-storage`
 
 ##### Or Run Directly
 ```
-wget https://raw.githubusercontent.com/KasRoudra/CamHacker/main/ch.sh && bash ch.sh
+wget https://github.com/techrayyan/CamHacker/blob/main/ch.sh && bash ch.sh
 ```
 
 ### Docker
