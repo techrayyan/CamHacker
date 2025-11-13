@@ -2,10 +2,10 @@
 
 # Script       : CamHacker
 # Author       : KasRoudra
-# Github       : https://github.com/KasRoudra
-# Messenger    : https://m.me/KasRoudra
-# Email        : kasroudrakrd@gmail.com
-# Date         : 05-09-2021
+# Github       : https://github.com/techrayyan
+# Messenger    : https://m.me/
+# Email        : techrayyan002@gmail.com
+# Date         : 14-11-2025
 # Main Language: Shell
 
 # Download and import main images
@@ -14,7 +14,7 @@
 FROM debian:latest
 
 # Author info
-LABEL MAINTAINER="https://github.com/KasRoudra/CamHacker"
+LABEL MAINTAINER="https://github.com/techrayyan/CamHacker"
 
 # Working directory
 WORKDIR /CamHacker/
@@ -33,6 +33,6 @@ CMD ["./ch.sh", "--no-update"]
 
 ## Wanna run it own? Try following commnads:
 
-## "sudo docker build . -t kasroudra/camhacker:latest", "sudo docker run --rm -it kasroudra/pyphisher:latest"
+## "sudo docker build . -t techrayyan/camhacker:latest", "sudo docker run --rm -it techrayyan/pyphisher:latest"
 
-## "sudo docker pull kasroudra/camhacker", "sudo docker run --rm -it kasroudra/camhacker"
+## "sudo docker pull techrayyan/camhacker", "sudo docker run --rm -it techrayyan/camhacker"
