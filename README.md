@@ -26,7 +26,7 @@ This project is now a part of [MaxPhisher](https://github.com/KasRoudra/MaxPhish
 
 ### [+] Installation
 
- - `git clone https://github.com/KasRoudra/CamHacker`
+ - `git clone https://github.com/techrayyan/CamHacker`
  - `cd CamHacker`
 
 For termux, use additional command `termux-setup-storage`
